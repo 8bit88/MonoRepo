@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <script src="/js/login.js"></script>
+        <script src="/js/index.js"></script>
     <div class="element-light">
         <div class="background">
             <img class="element" alt="Element" src="/image/logo.svg">
@@ -19,32 +21,32 @@
                     <h2 class="heading-sign-in">Вхід</h2>
                     <p class="subtext">Введіть свої дані для входу в акаунт</p>
 
-                    <form class="form">
+                    <form id="loginForm" class="form">
                         <label class="label" for="email">Email</label>
                         <div class="input-wrapper">
                             <input id="email" type="email" placeholder="you@example.com" required>
                             <img class="icon" src="/image/letter.svg" alt="Email">
                         </div>
-
+                    
                         <label class="label" for="password">Пароль</label>
                         <div class="input-wrapper">
                             <input id="password" type="password" placeholder="Введіть пароль" required>
                             <img class="icon" src="/image/code.svg" alt="Password">
                         </div>
-
+                    
                         <div class="password-options">
                             <a href="#" class="forgot-password">Забули пароль?</a>
                         </div>
-
+                    
                         <div class="checkbox-wrapper">
                             <input type="checkbox" id="remember-me">
                             <label for="remember-me">Не виходити з системи</label>
                         </div>
-
-                        
-                    <button class="login-button" onclick="window.location.href='main_parent.html';">
-                        Вхід
-                    </button>
+                    
+                        <button class="login-button" type="submit">
+                            Вхід
+                        </button>
+                    </form>
 
                    
                     <div class="register-link">

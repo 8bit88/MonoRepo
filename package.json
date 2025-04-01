@@ -18,9 +18,9 @@
   "homepage": "https://github.com/8bit88/MonoRepo#readme",
   "dependencies": {
     "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
     "express": "^4.21.2",
     "mongodb": "^6.15.0"
   },
-  "devDependencies": {},
   "description": ""
 }

@@ -1,44 +1,49 @@
+//  Необхідні модулі
 const express = require('express');
-const bodyParser = require('body-parser');
 const { MongoClient } = require('mongodb');
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
 
-// Middleware to parse JSON bodies
-app.use(bodyParser.json());
 
-// MongoDB connection URI and database name
+// Аппка для json файлів
+app.use(express.json());
+const cors = require('cors');
+app.use(cors());
+
+
+// З єднання з БД
 const uri = 'mongodb://localhost:27017';
 const dbName = 'UserData';
 
-// Function to check user credentials
+// Перевіряєм дані
 async function checkCredentials(email, password) {
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
     try {
-        // Connect to the MongoDB server
+        // До монго сервера підключаємось
         await client.connect();
 
-        // Access the database and collection
+        // Звертаємось до ДБ
         const database = client.db(dbName);
         const users = database.collection('users');
 
-        // Query the collection for a matching email and password
+        // пошук у ДБ
         const user = await users.findOne({ email, password });
 
-        // Return true if a matching user is found, otherwise false
-        return !!user;
+        // Якшо юзера знайдено то ретурним тру
+        return !!user; // !!-конвертує в бул
     } catch (error) {
         console.error('Error checking credentials:', error);
         return false;
     } finally {
-        // Ensure the client is closed
+        // Закриваємо підключення до клієнта
         await client.close();
     }
 }
 
-// Login route
+// Шлях логіну 
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
 
@@ -60,7 +65,7 @@ app.post('/login', async (req, res) => {
     }
 });
 
-// Start the server
+// Запускаємо сервер
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
