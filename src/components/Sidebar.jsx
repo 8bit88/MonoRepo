@@ -1,4 +1,7 @@
-import Image from "next/image";
+"use client";
+import "./Sidebar.module.css";
+import React from "react";
+
 import {
   Home,
   BookOpen,
@@ -8,7 +11,6 @@ import {
   CreditCard,
   Utensils,
 } from "lucide-react";
-import logoImg from "../../public/logo.png"; // або інший шлях
 
 const navItems = [
   { icon: <Home />, text: "Головна", link: "/home" },
@@ -22,24 +24,20 @@ const navItems = [
 
 export default function Sidebar() {
   return (
-    <aside className="w-64 h-screen bg-gray-100 p-4 shadow-lg">
-      <nav className="flex flex-col space-y-10">
-        <div className="flex justify-center mb-6">
-          <Image src={logoImg} alt="Logo" width={280} height={150} />
-
-          {navItems.map((item, index) => (
-            <a
-              key={index}
-              href={item.link}
-              className="flex items-center space-x-3 text-gray-800 hover:text-blue-600 p-2 rounded-lg hover:bg-blue-100 transition"
-            >
-              <div>
-                {item.icon} {item.text}
-              </div>
-            </a>
-          ))}
+    <aside className="sidebar-container">
+      <div className="d-flex flex-column justify-content-center mb-6">
+        <div className="logo-container">
+          <img src="/3.svg" alt="Logo" className="logo-image" />
         </div>
-      </nav>
+
+        {navItems.map((item, index) => (
+          <a key={index} href={item.link}>
+            <div>
+              {item.icon} {item.text} 
+            </div>
+          </a>
+        ))}
+      </div>
     </aside>
   );
 }

@@ -1,5 +1,5 @@
 "use client";
-
+import "./SheduleTable.module.css";
 import React from "react";
 
 const schedule = {
@@ -35,7 +35,7 @@ const schedule = {
     { subject: "Історія України", time: "1:00 - 2:00" },
     { subject: "Мистецтво", time: "2:15 - 3:15" },
   ],
-  "П’ятниця": [
+  "П'ятниця": [
     { subject: "Математика", time: "8:30 - 9:30" },
     { subject: "Хімія", time: "9:45 - 10:45" },
     { subject: "Англійська мова", time: "11:00 - 12:00" },
@@ -58,8 +58,8 @@ const ScheduleTable = () => {
               </div>
             ) : (
               <div key={idx} className="lesson">
-                <span className="lesson-name">{lesson.subject}</span>
-                <span className="lesson-time">{lesson.time}</span>
+                <div className="lesson-name">{lesson.subject}</div>
+                <div className="lesson-time">{lesson.time}</div>
               </div>
             )
           )}

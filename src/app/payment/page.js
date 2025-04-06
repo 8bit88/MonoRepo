@@ -3,11 +3,22 @@ import Sidebar from "@/components/Sidebar"; // шлях до твого комп
 export default function Home() {
   return (
     <main>
-         <Sidebar />
-      <h1 style={{ textAlign: "center", marginTop: "2rem" }}>
-        Оплата
-      </h1>
-      
+      <div className="sidebar">
+        <Sidebar />
+      </div>
+      <div className="mainContent">
+        <header>
+          <div className="heading-welcome">Оплата </div>
+          <p className="p">
+            Отримувач ЄРМОЛЕНКО ТЕТЯНА МАРКІВНА 
+            <div>IBAN
+            UA503052990000026000036306210 </div>
+            <div>РНОКПП/ЄДРПОУ 3161712360</div> 
+            <div>Призначення
+            платежу: Поповнення рахунку</div>
+          </p>{" "}
+        </header>{" "}
+      </div>
     </main>
   );
 }

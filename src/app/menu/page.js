@@ -3,11 +3,13 @@ import Sidebar from "@/components/Sidebar"; // шлях до твого комп
 export default function Home() {
   return (
     <main>
-         <Sidebar />
+       <div className="sidebar">
+                <Sidebar /> </div>
+                <div className="mainContent">
       <h1 style={{ textAlign: "center", marginTop: "2rem" }}>
-        Вибір меню
+        Меню
       </h1>
-    
+      </div>
     </main>
   );
 }
