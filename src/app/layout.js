@@ -1,4 +1,4 @@
-import Sidebar from "@/components/Sidebar";
+import Sidebar from "@/components/sidebar/Sidebar";
 import "../app/globals.css";
 
 export const metadata = {
@@ -10,14 +10,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="uk">
       <body>
-        <header
-          style={{
-            paddingTop: "-3rem",
-          }}
-        >
-          {" "}
-        </header>
-
         <div>
           <main>{children}</main>
         </div>
