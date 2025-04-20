@@ -1,0 +1,1923 @@
+﻿
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+}
+
+.name {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 8px;
+    left: 8px;
+    z-index: 10;
+}
+
+    .element-light
+
+{
+    width: 1920px;
+    height: 1200px;
+    background-color: #ffffff;
+}
+
+.element-light .container {
+    position: relative;
+    height: 1200px;
+}
+
+.element-light .background {
+    position: absolute;
+    width: 256px;
+    height: 1200px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: #e3e8e3;
+    box-shadow: 0px 4px 6px -4px #0000001a, 0px 10px 15px -3px #0000001a;
+}
+
+.element-light .horizontal-border {
+    width: 255px;
+    height: 89px;
+    top: 0;
+    left: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: absolute;
+    border-color: #e3e8e3;
+}
+
+.element-light .link {
+    position: absolute;
+    width: 196px;
+    height: 95px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.element-light .button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 28px;
+    left: 207px;
+    background-color: #15481f1a;
+    border-radius: 9999px;
+}
+
+.element-light .SVG {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 8px;
+    left: 8px;
+}
+
+.element-light .nav-wrapper {
+    position: absolute;
+    width: 255px;
+    height: 1042px;
+    top: 89px;
+    left: 0;
+    overflow: scroll;
+}
+
+    .element-light .nav-wrapper::-webkit-scrollbar {
+        width: 0;
+        display: none;
+    }
+
+.element-light .nav {
+    position: relative;
+    width: 231px;
+    height: 476px;
+    top: 16px;
+    left: 12px;
+}
+
+.element-light .div {
+    top: 0;
+    background-color: #15481f1a;
+    position: absolute;
+    width: 231px;
+    height: 36px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.element-light .img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    left: 12px;
+}
+
+.element-light .text-wrapper {
+    position: absolute;
+    width: 79px;
+    height: 20px;
+    top: 7px;
+    left: 40px;
+    font-weight: 500;
+    color: #15481f;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .link-2 {
+    top: 44px;
+    position: absolute;
+    width: 231px;
+    height: 36px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.element-light .text-wrapper-2 {
+    position: absolute;
+    width: 69px;
+    height: 20px;
+    top: 7px;
+    left: 40px;
+
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .link-3 {
+    top: 88px;
+    position: absolute;
+    width: 231px;
+    height: 36px;
+    left: 0;
+    border-radius: 10px;
+}
+
+        .element-light .text-wrapper-3 {
+            position: absolute;
+            width: 93px;
+            height: 20px;
+            top: 7px;
+            left: 40px;
+            font-weight: 500;
+            color: #161d16;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 20px;
+            white-space: nowrap;
+        }
+
+.element-light .link-4 {
+    top: 132px;
+    position: absolute;
+    width: 231px;
+    height: 36px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.element-light .text-wrapper-4 {
+    position: absolute;
+    width: 67px;
+    height: 20px;
+    top: 7px;
+    left: 40px;
+   
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .link-5 {
+    top: 176px;
+    position: absolute;
+    width: 231px;
+    height: 36px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.element-light .text-wrapper-5 {
+    position: absolute;
+    width: 119px;
+    height: 20px;
+    top: 7px;
+    left: 40px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .link-6 {
+    top: 212px;
+    position: absolute;
+    width: 231px;
+    height: 36px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.element-light .text-wrapper-6 {
+    position: absolute;
+    width: 72px;
+    height: 20px;
+    top: 7px;
+    left: 40px;
+   
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .link-7 {
+    top: 248px;
+    position: absolute;
+    width: 231px;
+    height: 36px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.element-light .text-wrapper-7 {
+    width: 64px;
+    height: 20px;
+    top: 7px;
+    left: 40px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .link-8 {
+    top: 284px;
+    position: absolute;
+    width: 231px;
+    height: 36px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.element-light .text-wrapper-8 {
+    width: 86px;
+    height: 20px;
+    top: 7px;
+    left: 40px;
+    
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .horizontal-border-2 {
+    width: 255px;
+    height: 69px;
+    top: 1131px;
+    left: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    position: absolute;
+    border-color: #e3e8e3;
+}
+
+.element-light .div-wrapper {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 17px;
+    left: 16px;
+    background-color: #15481f;
+    border-radius: 9999px;
+}
+
+.element-light .text-wrapper-9 {
+    height: 20px;
+    top: 7px;
+    left: 11px;
+    
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-10 {
+    width: 112px;
+    height: 20px;
+    top: 16px;
+    left: 64px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-11 {
+    height: 16px;
+    top: 36px;
+    left: 64px;
+   
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .main {
+    position: absolute;
+    width: 1664px;
+    height: 1200px;
+    top: 0;
+    left: 256px;
+    background-color: #f9fafb;
+    overflow: scroll;
+}
+
+    .element-light .main::-webkit-scrollbar {
+        width: 0;
+        display: none;
+    }
+
+.element-light .heading-welcome {
+    position: absolute;
+    width: 288px;
+    height: 36px;
+    top: 23px;
+    left: 24px;
+  
+    font-weight: 700;
+    color: #161d16;
+    font-size: 30px;
+    letter-spacing: -0.75px;
+    line-height: 36px;
+    white-space: nowrap;
+}
+
+.element-light .p {
+    width: 426px;
+    height: 24px;
+    top: 59px;
+    left: 24px;
+ 
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-border {
+    position: absolute;
+    width: 386px;
+    height: 152px;
+    top: 108px;
+    left: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #e3e8e3;
+    box-shadow: 0px 1px 2px #0000000d;
+}
+
+.element-light .heading-grade {
+    position: absolute;
+    width: 168px;
+    height: 20px;
+    top: 25px;
+    left: 25px;
+ 
+    font-weight: 500;
+    color: #6d786d;
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-12 {
+    width: 27px;
+    height: 32px;
+    top: 54px;
+    left: 25px;
+ 
+    font-weight: 700;
+    color: #161d16;
+    font-size: 24px;
+    line-height: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-13 {
+    width: 184px;
+    height: 16px;
+    top: 90px;
+    left: 25px;
+ 
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-14 {
+    width: 34px;
+    height: 15px;
+    top: 110px;
+    left: 25px;
+
+    font-weight: 400;
+    color: #16a34a;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-border-2 {
+    width: 386px;
+    height: 152px;
+    top: 108px;
+    left: 434px;
+    overflow: hidden;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #e3e8e3;
+    box-shadow: 0px 1px 2px #0000000d;
+}
+
+.element-light .heading-attendance {
+    position: absolute;
+    width: 133px;
+    height: 20px;
+    top: 25px;
+    left: 25px;
+   
+    font-weight: 500;
+    color: #6d786d;
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-15 {
+    position: absolute;
+    width: 51px;
+    height: 32px;
+    top: 54px;
+    left: 25px;
+   
+    font-weight: 700;
+    color: #161d16;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-16 {
+    position: absolute;
+    width: 200px;
+    height: 16px;
+    top: 80px;
+    left: 25px;
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-17 {
+    width: 31px;
+    height: 15px;
+    top: 110px;
+    left: 25px;
+  
+    font-weight: 400;
+    color: #16a34a;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-border-3 {
+    width: 386px;
+    height: 152px;
+    top: 108px;
+    left: 844px;
+    overflow: hidden;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #e3e8e3;
+    box-shadow: 0px 1px 2px #0000000d;
+}
+
+.element-light .heading-completed {
+    position: absolute;
+    width: 169px;
+    height: 20px;
+    top: 25px;
+    left: 25px;
+
+    font-weight: 500;
+    color: #6d786d;
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-18 {
+    width: 70px;
+    height: 32px;
+    top: 54px;
+    left: 25px;
+    
+    font-weight: 700;
+    color: #161d16;
+    font-size: 24px;
+    line-height: 32px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-19 {
+    position: absolute;
+    width: 188px;
+    height: 16px;
+    top: 90px;
+    left: 25px;
+    
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-20 {
+    width: 24px;
+    height: 15px;
+    top: 110px;
+    left: 25px;
+
+    font-weight: 400;
+    color: #16a34a;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-border-4 {
+    width: 386px;
+    height: 152px;
+    top: 108px;
+    left: 1254px;
+    overflow: hidden;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #e3e8e3;
+    box-shadow: 0px 1px 2px #0000000d;
+}
+
+.element-light .heading-upcoming {
+    position: absolute;
+    width: 122px;
+    height: 20px;
+    top: 25px;
+    left: 25px;
+    
+    font-weight: 500;
+    color: #6d786d;
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-21 {
+    width: 15px;
+    height: 32px;
+    top: 54px;
+    left: 25px;
+  
+    font-weight: 700;
+    color: #161d16;
+    font-size: 24px;
+    line-height: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-22 {
+    width: 241px;
+    height: 16px;
+    top: 90px;
+    left: 25px;
+ 
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .tablist {
+    position: absolute;
+    width: 1616px;
+    height: 40px;
+    top: 292px;
+    left: 24px;
+    background-color: #fafaf5;
+    border-radius: 10px;
+}
+
+.element-light .tab {
+    position: absolute;
+    width: 536px;
+    height: 32px;
+    top: 4px;
+    left: 4px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px #0000000d;
+}
+
+.element-light .text-wrapper-23 {
+    width: 67px;
+    height: 18px;
+    top: 6px;
+    left: 235px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .tab-academics {
+    width: 119px;
+    left: 769px;
+    position: absolute;
+    height: 18px;
+    top: 10px;
+  
+    font-weight: 500;
+    color: #6d786d;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .tab-activities {
+    width: 109px;
+    left: 1312px;
+    position: absolute;
+    height: 18px;
+    top: 10px;
+  
+    font-weight: 500;
+    color: #6d786d;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element-light .tabpanel {
+    position: absolute;
+    width: 1616px;
+    height: 855px;
+    top: 356px;
+    left: 24px;
+}
+
+.element-light .background-border-5 {
+    width: 796px;
+    height: 379px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #e3e8e3;
+    box-shadow: 0px 1px 2px #0000000d;
+}
+
+.element-light .heading-recent {
+    position: absolute;
+    width: 206px;
+    height: 28px;
+    top: 28px;
+    left: 25px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+.element-light .button-2 {
+    all: unset;
+    box-sizing: border-box;
+    position: absolute;
+    width: 79px;
+    height: 36px;
+    top: 25px;
+    left: 692px;
+    border-radius: 10px;
+}
+
+.element-light .text-wrapper-24 {
+    width: 127px;
+    height: 18px;
+    top: 8px;
+    left: -60px;
+
+    font-weight: 500;
+    color: #15481f;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-25 {
+    width: 222px;
+    height: 20px;
+    top: 66px;
+    left: 25px;
+ 
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .horizontal-border-3 {
+    position: absolute;
+    width: 746px;
+    height: 53px;
+    top: 95px;
+    left: 25px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #e3e8e3;
+}
+
+.element-light .background-2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: #dcfce7;
+    border-radius: 9999px;
+}
+
+.element-light .text-wrapper-26 {
+    width: 31px;
+    height: 19px;
+    top: 9px;
+    left: 12px;
+
+    font-weight: 400;
+    color: #15803d;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+        .element-light .text-wrapper-27 {
+            width: 107px;
+            height: 24px;
+            top: -1px;
+            left: 52px;
+            font-weight: 500;
+            color: #161d16;
+            font-size: 16px;
+            line-height: 24px;
+            white-space: nowrap;
+            position: absolute;
+            letter-spacing: 0;
+        }
+
+.element-light .text-wrapper-28 {
+    width: 57px;
+    position: absolute;
+    height: 16px;
+    top: 23px;
+    left: 52px;
+ 
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-29 {
+    width: 33px;
+    left: 713px;
+    position: absolute;
+    height: 19px;
+    top: 9px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.element-light .horizontal-border-4 {
+    width: 746px;
+    height: 53px;
+    top: 164px;
+    left: 25px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: absolute;
+    border-color: #e3e8e3;
+}
+
+.element-light .background-3 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: #dbeafe;
+    border-radius: 9999px;
+}
+
+.element-light .text-wrapper-30 {
+    width: 22px;
+    height: 19px;
+    top: 9px;
+    left: 15px;
+  
+    font-weight: 400;
+    color: #1d4ed8;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-31 {
+    width: 179px;
+    height: 24px;
+    top: -1px;
+    left: 52px;
+
+    font-weight: 500;
+    color: #161d16;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-32 {
+    width: 51px;
+    position: absolute;
+    height: 16px;
+    top: 23px;
+    left: 52px;
+ 
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-33 {
+    width: 34px;
+    left: 713px;
+    position: absolute;
+    height: 19px;
+    top: 9px;
+
+    font-weight: 500;
+    color: #161d16;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.element-light .horizontal-border-5 {
+    width: 746px;
+    height: 53px;
+    top: 233px;
+    left: 25px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: absolute;
+    border-color: #e3e8e3;
+}
+
+.element-light .text-wrapper-34 {
+    position: absolute;
+    width: 18px;
+    height: 19px;
+    top: 9px;
+    left: 11px;
+  
+    font-weight: 400;
+    color: #15803d;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-35 {
+    position: absolute;
+    width: 61px;
+    height: 24px;
+    top: -1px;
+    left: 52px;
+ 
+    font-weight: 500;
+    color: #161d16;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-36 {
+    position: absolute;
+    width: 52px;
+    height: 16px;
+    top: 23px;
+    left: 52px;
+ 
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-37 {
+    width: 34px;
+    left: 712px;
+    position: absolute;
+    height: 19px;
+    top: 9px;
+    
+    font-weight: 500;
+    color: #161d16;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.element-light .horizontal-border-6 {
+    width: 746px;
+    height: 53px;
+    top: 302px;
+    left: 25px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: absolute;
+    border-color: #e3e8e3;
+}
+
+.element-light .text-wrapper-38 {
+    width: 169px;
+    height: 24px;
+    top: -1px;
+    left: 52px;
+ 
+    font-weight: 500;
+    color: #161d16;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-39 {
+    width: 54px;
+    left: 712px;
+    position: absolute;
+    height: 19px;
+    top: 9px;
+    
+    font-weight: 500;
+    color: #161d16;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.element-light .background-border-6 {
+    width: 796px;
+    height: 379px;
+    top: 0;
+    left: 820px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #e3e8e3;
+    box-shadow: 0px 1px 2px #0000000d;
+}
+
+.element-light .heading-upcoming-2 {
+    position: absolute;
+    width: 157px;
+    height: 28px;
+    top: 28px;
+    left: 25px;
+   
+    font-weight: 500;
+    color: #161d16;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+.element-light .button-3 {
+    all: unset;
+    box-sizing: border-box;
+    position: absolute;
+    width: 124px;
+    height: 36px;
+    top: 25px;
+    left: 646px;
+    border-radius: 10px;
+}
+
+.element-light .text-wrapper-40 {
+    width: 101px;
+    height: 18px;
+    top: 8px;
+    left: 12px;
+   
+    font-weight: 500;
+    color: #15481f;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-41 {
+    width: 243px;
+    height: 20px;
+    top: 66px;
+    left: 25px;
+   
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .paragraph {
+    position: absolute;
+    width: 48px;
+    height: 36px;
+    top: 0;
+    left: 0;
+}
+
+.element-light .text-wrapper-42 {
+    width: 14px;
+    height: 20px;
+    top: -1px;
+    left: 17px;
+    
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-43 {
+    position: absolute;
+    height: 16px;
+    top: 19px;
+    left: 12px;
+    
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-44 {
+    width: 80px;
+    height: 24px;
+    top: -1px;
+    left: 60px;
+   
+    font-weight: 500;
+    color: #161d16;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+        .element-light .text-wrapper-45 {
+            width: 143px;
+            height: 15px;
+            top: 23px;
+            left: 60px;
+            font-weight: 400;
+            color: #6d786d;
+            font-size: 12px;
+            line-height: 16px;
+            white-space: nowrap;
+            position: absolute;
+            letter-spacing: 0;
+        }
+
+.element-light .text-wrapper-46 {
+    width: 15px;
+    height: 20px;
+    top: -1px;
+    left: 17px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-47 {
+    width: 164px;
+    height: 24px;
+    top: -1px;
+    left: 60px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-48 {
+    width: 105px;
+    height: 15px;
+    top: 23px;
+    left: 60px;
+  
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-49 {
+    width: 18px;
+    height: 20px;
+    top: -1px;
+    left: 15px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.element-light .text-wrapper-50 {
+    width: 196px;
+    height: 24px;
+    top: -1px;
+    left: 60px;
+    
+    font-weight: 500;
+    color: #161d16;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .overlay {
+    position: absolute;
+    width: 794px;
+    height: 68px;
+    top: 310px;
+    left: 1px;
+    background-color: #fafaf580;
+}
+
+.element-light .button-4 {
+    all: unset;
+    box-sizing: border-box;
+    position: relative;
+    width: 746px;
+    height: 36px;
+    top: 8px;
+    left: 24px;
+    border-radius: 10px;
+}
+
+.element-light .text-wrapper-51 {
+    width: 147px;
+    height: 15px;
+    top: 9px;
+    left: 319px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+        .element-light .background-border-7 {
+            width: 1616px;
+            height: 452px;
+            top: 403px;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            background-color: #ffffff;
+            border-radius: 12px;
+            border: 1px solid;
+            border-color: #e3e8e3;
+            box-shadow: 0px 1px 2px #0000000d;
+        }
+
+.element-light .heading-weekly {
+    position: absolute;
+    width: 151px;
+    height: 28px;
+    top: 24px;
+    left: 25px;
+    
+    font-weight: 500;
+    color: #161d16;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+        .element-light .text-wrapper-52 {
+            height: 20px;
+            top: 58px;
+            left: 25px;
+            font-weight: 400;
+            color: #6d786d;
+            font-size: 14px;
+            line-height: 20px;
+            white-space: nowrap;
+            position: absolute;
+            letter-spacing: 0;
+        }
+
+.element-light .text-wrapper-53 {
+    height: 20px;
+    top: 102px;
+    left: 139px;
+    
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .element-wrapper {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 131px;
+    left: 25px;
+    background-color: #dbeafe;
+    border-radius: 4px;
+}
+
+.element-light .element {
+    width: 81px;
+    height: 31px;
+    
+    left: 113px;
+  
+    font-weight: 400;
+    color: #1e40af;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .span {
+    font-weight: 600;
+}
+
+
+
+        .element-light .background-4 {
+            position: absolute;
+            width: 307px;
+            height: 48px;
+            top: 187px;
+            left: 25px;
+            background-color: #dcfce7;
+            border-radius: 4px;
+        }
+
+.element-light .element-2 {
+    width: 65px;
+    height: 31px;
+    
+    left: 121px;
+   
+    font-weight: 400;
+    color: #166534;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-5 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 243px;
+    left: 25px;
+    background-color: #f3e8ff;
+    border-radius: 4px;
+}
+
+.element-light .element-3 {
+    height: 32px;
+    
+    left: 100px;
+  
+    font-weight: 400;
+    color: #6b21a8;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-55 {
+    height: 16px;
+    top: 298px;
+    left: 127px;
+
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-6 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 323px;
+    left: 25px;
+    background-color: #fef3c7;
+    border-radius: 4px;
+}
+
+.element-light .element-4 {
+    height: 32px;
+  
+    left: 104px;
+ 
+    font-weight: 400;
+    color: #92400e;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-7 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 379px;
+    left: 25px;
+    background-color: #fce7f3;
+    border-radius: 4px;
+}
+
+.element-light .element-5 {
+    height: 32px;
+   
+    left: 118px;
+   
+    font-weight: 400;
+    color: #9d174d;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .text-wrapper-56 {
+    height: 20px;
+    top: 102px;
+    left: 460px;
+   
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-8 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 131px;
+    left: 340px;
+    background-color: #dbeafe;
+    border-radius: 4px;
+}
+
+.element-light .background-9 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 187px;
+    left: 340px;
+    background-color: #dcfce7;
+    border-radius: 4px;
+}
+
+.element-light .background-10 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 243px;
+    left: 340px;
+    background-color: #f3e8ff;
+    border-radius: 4px;
+}
+
+.element-light .text-wrapper-57 {
+    height: 16px;
+    top: 298px;
+    left: 442px;
+ 
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-11 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 323px;
+    left: 340px;
+    background-color: #fef3c7;
+    border-radius: 4px;
+}
+
+.element-light .background-12 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 379px;
+    left: 340px;
+    background-color: #fce7f3;
+    border-radius: 4px;
+}
+
+.element-light .text-wrapper-58 {
+    width: 84px;
+    height: 20px;
+    top: 102px;
+    left: 766px;
+
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-13 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 131px;
+    left: 655px;
+    background-color: #dbeafe;
+    border-radius: 4px;
+}
+
+.element-light .background-14 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 187px;
+    left: 655px;
+    background-color: #dcfce7;
+    border-radius: 4px;
+}
+
+.element-light .background-15 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 243px;
+    left: 655px;
+    background-color: #f3e8ff;
+    border-radius: 4px;
+}
+
+.element-light .text-wrapper-59 {
+    height: 16px;
+    top: 298px;
+    left: 757px;
+   
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-16 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 323px;
+    left: 655px;
+    background-color: #fef3c7;
+    border-radius: 4px;
+}
+
+.element-light .background-17 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 379px;
+    left: 655px;
+    background-color: #fce7f3;
+    border-radius: 4px;
+}
+
+.element-light .text-wrapper-60 {
+    width: 66px;
+    height: 20px;
+    top: 102px;
+    left: 1090px;
+    
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-18 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 131px;
+    left: 969px;
+    background-color: #dbeafe;
+    border-radius: 4px;
+}
+
+.element-light .background-19 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 187px;
+    left: 969px;
+    background-color: #dcfce7;
+    border-radius: 4px;
+}
+
+.element-light .background-20 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 243px;
+    left: 969px;
+    background-color: #f3e8ff;
+    border-radius: 4px;
+}
+
+.element-light .text-wrapper-61 {
+    height: 16px;
+    top: 298px;
+    left: 1072px;
+   
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-21 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 323px;
+    left: 969px;
+    background-color: #fef3c7;
+    border-radius: 4px;
+}
+
+.element-light .background-22 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 379px;
+    left: 969px;
+    background-color: #fce7f3;
+    border-radius: 4px;
+}
+
+.element-light .text-wrapper-62 {
+    height: 20px;
+    top: 102px;
+    left: 1404px;
+  
+    font-weight: 500;
+    color: #161d16;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-23 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 131px;
+    left: 1284px;
+    background-color: #dbeafe;
+    border-radius: 4px;
+}
+
+.element-light .background-24 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 187px;
+    left: 1284px;
+    background-color: #dcfce7;
+    border-radius: 4px;
+}
+
+.element-light .background-25 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 243px;
+    left: 1284px;
+    background-color: #f3e8ff;
+    border-radius: 4px;
+}
+
+.element-light .text-wrapper-63 {
+    height: 16px;
+    top: 298px;
+    left: 1387px;
+
+    font-weight: 400;
+    color: #6d786d;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.element-light .background-26 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 323px;
+    left: 1284px;
+    background-color: #fef3c7;
+    border-radius: 4px;
+}
+
+.element-light .background-27 {
+    position: absolute;
+    width: 307px;
+    height: 48px;
+    top: 379px;
+    left: 1284px;
+    background-color: #fce7f3;
+    border-radius: 4px;
+}
+
+.element-light .button-wrapper {
+    position: absolute;
+    width: 1616px;
+    height: 202px;
+    top: 1243px;
+    left: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #e3e8e3;
+}
+
+.element-light .button-5 {
+    all: unset;
+    box-sizing: border-box;
+    position: relative;
+    width: 158px;
+    height: 40px;
+    top: 29px;
+    left: 1433px;
+    background-color: #da6900;
+    border-radius: 10px;
+}
+
+.element-light .text-wrapper-64 {
+    position: absolute;
+    width: 126px;
+    height: 18px;
+    top: 10px;
+    left: 16px;
+   
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
