@@ -2,7 +2,7 @@ import Image from "next/image";
 import "../home/home.module.css";
 
 import React from "react";
-import Sidebar from "@/components/Sidebar"; // шлях до твого компонента
+import Sidebar from "../../components/Sidebar"; // шлях до твого компонента
 
 export default function Home() {
   return (
