@@ -1,4 +1,4 @@
-import Sidebar from "../../components/sidebar/Sidebar";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   return (
@@ -7,11 +7,10 @@ export default function Home() {
         <Sidebar />
       </div>
       <div className="mainContent">
-        <header>
-          <div className="heading-welcome">Відвідуваність </div>
-          <p className="p"></p>{" "}
-        </header>{" "}
-      </div>
+      <header>
+        <div className="heading-welcome">Відвідуваність </div>
+        <p className="p"></p>{" "}
+      </header> </div>
     </main>
   );
 }

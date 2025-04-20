@@ -1,6 +1,5 @@
-import ScheduleTable from "../../components/shedule/ScheduleTable";
-import Sidebar from "../../components/sidebar/Sidebar";
-
+import ScheduleTable from "@/components/ScheduleTable";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   return (
