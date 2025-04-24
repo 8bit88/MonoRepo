@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-
-=======
-import Sidebar from "../components/Sidebar";
->>>>>>> 0c434a7701dd977b0a6f033a0a8cfcc9995f906e
 import "../app/globals.css";
-import {Montserrat} from "next/font/google";
+import { Montserrat } from "next/font/google";
+import { Toaster } from "sonner";
 
-const shrift = Montserrat({
+const font = Montserrat({
   subsets: ["cyrillic"],
   weight: ["400", "700"],
 });
@@ -18,11 +14,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="uk">
+    <html lang="en">
       <body>
-        <div>
-          <main>{children}</main>
-        </div>
+        <main className="content">{children}</main>
       </body>
     </html>
   );

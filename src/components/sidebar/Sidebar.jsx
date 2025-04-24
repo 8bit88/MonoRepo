@@ -1,46 +1,50 @@
 "use client";
+
 import styles from "./Sidebar.module.css";
 import React from "react";
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c434a7701dd977b0a6f033a0a8cfcc9995f906e
+import clsx from "clsx";
 import {
-  Home,
   BookOpen,
   ClipboardList,
   Calendar,
-  Clock,
   CreditCard,
   Utensils,
+  ChevronsLeft,
+  ChevronsRight,
 } from "lucide-react";
 
 const navItems = [
-  { icon: <Home />, text: "Головна", link: "/home" },
-  { icon: <BookOpen />, text: "Оцінки", link: "/marks" },
-  { icon: <ClipboardList />, text: "Завдання", link: "/tasks" },
-  { icon: <Calendar />, text: "Розклад", link: "/timetable" },
-  { icon: <Clock />, text: "Відвідуваність", link: "/attendance" },
-  { icon: <CreditCard />, text: "Оплата", link: "/payment" },
-  { icon: <Utensils />, text: "Меню", link: "/menu" },
+  { icon: <BookOpen />, text: "Оцінки", link: "/pages/marks" },
+  { icon: <ClipboardList />, text: "Завдання", link: "/pages/tasks" },
+  { icon: <Calendar />, text: "Розклад", link: "/pages/timetable" },
+  { icon: <CreditCard />, text: "Оплата", link: "/pages/payment" },
+  { icon: <Utensils />, text: "Меню", link: "/pages/menu" },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ isCollapsed, setIsCollapsed }) {
   return (
-    <aside className={styles.sidebarContainer}>
+    <aside
+      className={clsx(styles.sidebarContainer, {
+        [styles.collapsed]: isCollapsed,
+      })}
+    >
       <div className={styles.logoContainer}>
         <img src="/3.svg" alt="Logo" className={styles.logoImage} />
       </div>
 
+      <button
+        className={styles.toggleButton}
+        onClick={() => setIsCollapsed(!isCollapsed)}
+      >
+        {isCollapsed ? <ChevronsRight /> : <ChevronsLeft />}
+      </button>
+
       {navItems.map((item, index) => (
         <a key={index} href={item.link} className={styles.navItem}>
-          <span>{item.icon}</span>
-          <span style={{ marginLeft: '10px' }}>{item.text}</span>
+          <span className={styles.icon}>{item.icon}</span>
+          {!isCollapsed && <span className={styles.label}>{item.text}</span>}
         </a>
       ))}
     </aside>
   );
 }
-
-
