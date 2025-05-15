@@ -2,10 +2,7 @@
 import styles from "./Sidebar.module.css";
 import React from "react";
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 0c434a7701dd977b0a6f033a0a8cfcc9995f906e
 import {
   Home,
   BookOpen,
