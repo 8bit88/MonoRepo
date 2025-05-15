@@ -15,27 +15,25 @@ export default function Home() {
     router.push("/pages/password");
   };
 
- async function handleSubmit(e) {
-  e.preventDefault();
-  const formData = new FormData(e.target);
-  const res = await login(formData);
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const res = await login(formData);
 
-  if (res.error) {
-    setError(res.error);
-  } else {
-    localStorage.setItem("user", JSON.stringify(res.user));
-    
-   
-    if (res.user.role === "teacher") {
-      router.push("/pages/teacher/tasksadd");
+    if (res.error) {
+      setError(res.error);
+    } else {
+      localStorage.setItem("user", JSON.stringify(res.user));
+
+      if (res.user.role === "teacher") {
+        router.push("/pages/teacher/tasksadd");
       } else if (res.user.role === "student") {
-      router.push("/pages/student/tasks");
-    } else if (res.user.role === "parent"){
-      router.push("/pages/parent/tasks"); 
+        router.push("/pages/student/tasks");
+      } else if (res.user.role === "parent") {
+        router.push("/pages/parent/tasks");
+      }
     }
   }
-}
-
 
   async function login(formData) {
     const res = await fetch("/api/auth/login", {
@@ -111,9 +109,5 @@ export default function Home() {
         </div>
       </div>
     </>
-<<<<<<< HEAD
-=======
-
->>>>>>> @{-1}
   );
 }

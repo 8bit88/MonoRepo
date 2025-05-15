@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 POST http://localhost:3000/login
 Content-Type: application/json
 
@@ -7,13 +6,3 @@ Content-Type: application/json
     "password": "Danik2504"
 }
 
-=======
-### LOGIN
- POST http://localhost:3000/api/auth/login
-Content-Type: application/json
-
-{
-  "email": "chebyrek384@gmail.com",
-  "password": "Danik2504"
-}
->>>>>>> 0c434a7701dd977b0a6f033a0a8cfcc9995f906e
