@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import ScheduleTable from "../../../components/shedule/ScheduleTable";
+import ScheduleTable from "../../../../components/shedule/ScheduleTable";
 import styles from "./SheduleTable.module.css"; 
-import Sidebar from "../../../components/sidebar/Sidebar";
+import Sidebar from "../../../../components/sidebar/Sidebar";
 
 export default function ShedulePage() {
   const [classId, setClassId] = useState(null);

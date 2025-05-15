@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Sidebar from "../../../components/sidebar/Sidebar";
+import Sidebar from "../../../../components/sidebar/Sidebar";
 import styles from "./mark.module.css";
 
 export default function MarksPage() {

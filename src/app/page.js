@@ -25,11 +25,13 @@ export default function Home() {
   } else {
     localStorage.setItem("user", JSON.stringify(res.user));
     
-    // 🔽 Перевірка ролі користувача
+   
     if (res.user.role === "teacher") {
-      router.push("/teachers/task");
-    } else {
-      router.push("/pages/home"); // fallback
+      router.push("/pages/teacher/tasksadd");
+      } else if (res.user.role === "student") {
+      router.push("/pages/student/tasks");
+    } else if (res.user.role === "parent"){
+      router.push("/pages/parent/tasks"); 
     }
   }
 }

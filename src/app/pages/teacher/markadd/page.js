@@ -1,7 +1,7 @@
 "use client";
-import Sidebar from "../../../components/sidebartecher/Sidebar";
+import Sidebar from "../../../../components/sidebartecher/Sidebar";
 import React, { useState, useEffect } from "react";
-import AddMarkForm from "../../../components/markadd/Mark";
+import AddMarkForm from "../../../../components/markadd/Mark";
 import styles from "./mark.module.css";
 
 

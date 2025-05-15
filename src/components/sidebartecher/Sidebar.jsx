@@ -12,9 +12,9 @@ import {
 } from "lucide-react";
 
 const navItems = [
-  { icon: <BookOpen />, text: "Оцінки", link: "/teachers/mark" },
-  { icon: <ClipboardList />, text: "Завдання", link: "/teachers/task" },
-  { icon: <Calendar />, text: "Розклад", link: "/teachers/timetable" },
+  { icon: <BookOpen />, text: "Оцінки", link: "/pages/teacher/marksadd" },
+  { icon: <ClipboardList />, text: "Завдання", link: "/pages/teacher//tasksadd" },
+  { icon: <Calendar />, text: "Розклад", link: "/pages/teacher/timetable" },
 ];
 
 export default function Sidebar({ isCollapsed, setIsCollapsed }) {

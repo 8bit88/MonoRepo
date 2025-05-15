@@ -1,7 +1,7 @@
 "use client";
-import Sidebar from "../../../components/sidebartecher/Sidebar";
+import Sidebar from "../../../../components/sidebartecher/Sidebar";
 import React, { useState, useEffect } from "react";
-import AddAssignmentForm from "../../../components/taskadd/Task";
+import AddAssignmentForm from "../../../../components/taskadd/Task";
 import styles from "./task.module.css";
 
 

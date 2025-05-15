@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Sidebar from "../../../components/sidebar/Sidebar";
-import { Calendar } from "../../../components/ui/calendar";
+import Sidebar from "../../../../components/sidebar/Sidebar";
+import { Calendar } from "../../../../components/ui/calendar";
 import styles from "./task.module.css"; 
 
 export default function TasksPage() {

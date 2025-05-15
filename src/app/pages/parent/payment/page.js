@@ -1,5 +1,5 @@
 "use client";
-import Sidebar from "../../../components/sidebar/Sidebar";
+import Sidebar from "../../../../components/sidebar/Sidebar";
 import styles from "./pay.module.css";
 import Image from "next/image";
 import { useState } from "react";
@@ -12,7 +12,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "../../../components/ui/table";
+} from "../../../../components/ui/table";
 
 export default function PayPage() {
   const [isCollapsed, setIsCollapsed] = useState(false);

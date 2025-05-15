@@ -7,18 +7,15 @@ import {
   BookOpen,
   ClipboardList,
   Calendar,
-  CreditCard,
-  Utensils,
   ChevronsLeft,
   ChevronsRight,
 } from "lucide-react";
 
 const navItems = [
-  { icon: <BookOpen />, text: "Оцінки", link: "/pages/parent/marks" },
-  { icon: <ClipboardList />, text: "Завдання", link: "/pages/parent/tasks" },
-  { icon: <Calendar />, text: "Розклад", link: "/pages/parent/timetable" },
-  { icon: <CreditCard />, text: "Оплата", link: "/pages/parent/payment" },
-  { icon: <Utensils />, text: "Меню", link: "/pages/parent/menu" },
+  { icon: <BookOpen />, text: "Оцінки", link: "/pages/student/marks" },
+  { icon: <ClipboardList />, text: "Завдання", link: "/pages/student/tasks" },
+  { icon: <Calendar />, text: "Розклад", link: "/pages/student/timetable" },
+  
 ];
 
 export default function Sidebar({ isCollapsed, setIsCollapsed }) {

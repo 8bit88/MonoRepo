@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Sidebar from "../../../components/sidebar/Sidebar";
-import MenuTable from "../../../components/menu/Menu";
+import Sidebar from "../../../../components/sidebar/Sidebar";
+import MenuTable from "../../../../components/menu/Menu";
 import styles from "./menu.module.css";
 
 export default function MenuPage() {
