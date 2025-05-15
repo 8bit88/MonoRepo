@@ -15,17 +15,26 @@ export default function Home() {
     router.push("/pages/password");
   };
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const res = await login(formData);
+ async function handleSubmit(e) {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const res = await login(formData);
 
-    if (res.error) {
-      setError(res.error);
+  if (res.error) {
+    setError(res.error);
+  } else {
+    localStorage.setItem("user", JSON.stringify(res.user));
+    
+    // 🔽 Перевірка ролі користувача
+    if (res.user.role === "teacher") {
+      router.push("/teachers/task");
     } else {
-      router.push("/pages/home"); // перенаправлення після входу
+      router.push("/pages/home"); // fallback
     }
   }
+}
+
+
   async function login(formData) {
     const res = await fetch("/api/auth/login", {
       method: "POST",
@@ -59,7 +68,7 @@ export default function Home() {
             <div className={styles.inputWrapper}>
               <input
                 id="email"
-                name="email" 
+                name="email"
                 type="email"
                 placeholder="you@example.com"
                 required

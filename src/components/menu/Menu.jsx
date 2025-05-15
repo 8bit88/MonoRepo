@@ -100,7 +100,7 @@ const Menu = () => {
           body: JSON.stringify(dataToSend),
         });
       }
-      toast("Успішно надіслано всі дані!", {
+      toast("Дякуємо! Вибір меню збережено", {
         position: "top-center",
         duration: 4000,
       });

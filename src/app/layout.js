@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <main className="content">{children}</main>
+        <Toaster />
       </body>
     </html>
   );

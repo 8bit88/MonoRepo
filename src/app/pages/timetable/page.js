@@ -1,30 +1,39 @@
 "use client";
-
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import ScheduleTable from "../../../components/shedule/ScheduleTable";
+import styles from "./SheduleTable.module.css"; 
 import Sidebar from "../../../components/sidebar/Sidebar";
-import styles from "./SheduleTable.module.css";
-import ScheduleTable from "../../../components/shedule/ScheduleTable"
-
 
 export default function ShedulePage() {
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const [date, setDate] = useState(new Date());
+  const [classId, setClassId] = useState(null);
+   const [isCollapsed, setIsCollapsed] = useState(false);
+
+  useEffect(() => {
+    const userData = localStorage.getItem("user");
+    if (userData) {
+      const user = JSON.parse(userData);
+      setClassId(user.classId);
+    }
+  }, []);
+
+  if (!classId) return <p>Клас не знайдено</p>;
 
 
-  return (
-    <main className={styles.container}>
+
+ return (
+    <div className={styles.layout}>
       <Sidebar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
-      <div
+      <main
         className={`${styles.content} ${isCollapsed ? styles.expanded : ""}`}
       >
         <header className={styles.header}>
           <div>
-          <h1 className={styles.title}>Розклад</h1>
-          <p className={styles.subtitle}>Всі уроки та гуртки на тиждень</p>
+            <h1 className={styles.title}> Розклад</h1>
+            <p className={styles.subtitle}>Переглядайте розклад на тиждень</p>
           </div>
         </header>
-          <ScheduleTable />
-          </div>
-        </main>
+       <ScheduleTable classId={classId} />
+      </main>
+    </div>
   );
 }
