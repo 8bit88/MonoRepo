@@ -46,7 +46,9 @@ const ScheduleTable = ({ classId }) => {
           {day.subjects.map((lesson, i) => (
             <div key={i} className={styles.lesson}>
               <div className={styles.lessonName}>{lesson.subject}</div>
+              <div>{lesson.class}</div>
               <div className={styles.lessonTime}>{lesson.time}</div>
+              
             </div>
           ))}
         </div>

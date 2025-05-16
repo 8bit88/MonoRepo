@@ -19,7 +19,7 @@ export async function GET(request) {
 
     const students = await collection
       .find({ classId })
-      .project({ _id: 1, name: 1 }) 
+      .project({ _id: 1, name: 1 , classId: 1}) 
       .toArray();
 
     return NextResponse.json({ students });

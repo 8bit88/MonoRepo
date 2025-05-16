@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import ScheduleTable from "../../../../components/shedule/ScheduleTable";
+import ScheduleTable from "../../../../components/scheduletech/ScheduleTable";
 import styles from "./SheduleTable.module.css"; 
 import Sidebar from "../../../../components/sidebartecher/Sidebar";
 
