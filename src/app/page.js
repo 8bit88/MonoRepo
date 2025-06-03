@@ -3,18 +3,17 @@
 import Image from "next/image";
 import mailImg from "../../public/mail.png";
 import codeImg from "../../public/code.png";
-
-import logoImg from "../../public/3.png";
-import Link from "next/link";
 import styles from "./Login.module.css";
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-
 export default function Home() {
   const router = useRouter();
   const [error, setError] = useState(null);
+  const handleForgotClick = () => {
+    router.push("/pages/password");
+  };
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -24,9 +23,18 @@ export default function Home() {
     if (res.error) {
       setError(res.error);
     } else {
-      router.push("/home"); // перенаправлення після входу
+      localStorage.setItem("user", JSON.stringify(res.user));
+
+      if (res.user.role === "teacher") {
+        router.push("/pages/teacher/tasksadd");
+      } else if (res.user.role === "student") {
+        router.push("/pages/student/tasks");
+      } else if (res.user.role === "parent") {
+        router.push("/pages/parent/tasks");
+      }
     }
   }
+
   async function login(formData) {
     const res = await fetch("/api/auth/login", {
       method: "POST",
@@ -38,14 +46,13 @@ export default function Home() {
         password: formData.get("password"),
       }),
     });
-  
+
     if (!res.ok) {
       return { error: "Login failed" };
     }
-  
+
     return await res.json();
   }
-  
 
   return (
     <>
@@ -61,7 +68,7 @@ export default function Home() {
             <div className={styles.inputWrapper}>
               <input
                 id="email"
-                name="email" // додано
+                name="email"
                 type="email"
                 placeholder="you@example.com"
                 required
@@ -75,7 +82,7 @@ export default function Home() {
             <div className={styles.inputWrapper}>
               <input
                 id="password"
-                name="password" // додано
+                name="password"
                 type="password"
                 placeholder="Введіть пароль"
                 required
@@ -84,9 +91,13 @@ export default function Home() {
             </div>
 
             <div className={styles.passwordOptions}>
-              <a href="#" className={styles.forgotPassword}>
+              <p
+                className={styles.forgotPassword}
+                onClick={handleForgotClick}
+                style={{ cursor: "pointer" }}
+              >
                 Забули пароль?
-              </a>
+              </p>
             </div>
 
             <button className={styles.loginButton} type="submit">
@@ -98,7 +109,5 @@ export default function Home() {
         </div>
       </div>
     </>
-
   );
 }
-
