@@ -1,8 +1,9 @@
-import Sidebar from "../components/sidebar";
-import "../app/globals.css";
-import {Montserrat} from "next/font/google";
 
-const shrift = Montserrat({
+import "../app/globals.css";
+import { Montserrat } from "next/font/google";
+import { Toaster } from "sonner";
+
+const font = Montserrat({
   subsets: ["cyrillic"],
   weight: ["400", "700"],
 });
@@ -14,11 +15,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="uk">
+    <html lang="en">
       <body>
-        <div>
-          <main>{children}</main>
-        </div>
+        <main className="content">{children}</main>
+        <Toaster />
       </body>
     </html>
   );

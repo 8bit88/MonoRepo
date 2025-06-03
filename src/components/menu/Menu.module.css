@@ -1,33 +1,55 @@
 .menuContainer {
-  padding: 20px;
   background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  margin: 12px;
+ 
 }
 
-.select,
-.button {
-  padding: 10\px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.select {
   width: 100%;
-  box-sizing: border-box;
-  font-family: Montserrat;
-}
-
-.select:focus,
-.input:focus {
-  outline: none;
-  border-color: #15481F;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
 }
 
 .button {
-  background-color: #15481F;
+  margin: 24px auto 0;
+  display: block;
+  padding: 12px 24px;
+  background-color: #15481f;
   color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background 0.3s ease;
 }
 
 .button:hover {
-  background-color: #15481F;
+  background-color: #0056b3;
+}
+
+.menuWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .menuContainer {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 300px;
+  }
 }

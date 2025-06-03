@@ -1,70 +1,57 @@
 "use client";
-import styles from "./SheduleTable.module.css";
-import React from "react";
+import { useEffect, useState } from "react";
+import styles from "../shedule/SheduleTable.module.css";
 
-const schedule = {
-  Понеділок: [
-    { subject: "Математика", time: "8:30 - 9:30" },
-    { subject: "Хімія", time: "9:45 - 10:45" },
-    { subject: "Англійська мова", time: "11:00 - 12:00" },
-    "Обідня перерва",
-    { subject: "Історія України", time: "1:00 - 2:00" },
-    { subject: "Мистецтво", time: "2:15 - 3:15" },
-  ],
-  Вівторок: [
-    { subject: "Математика", time: "8:30 - 9:30" },
-    { subject: "Хімія", time: "9:45 - 10:45" },
-    { subject: "Англійська мова", time: "11:00 - 12:00" },
-    "Обідня перерва",
-    { subject: "Історія України", time: "1:00 - 2:00" },
-    { subject: "Мистецтво", time: "2:15 - 3:15" },
-  ],
-  Середа: [
-    { subject: "Математика", time: "8:30 - 9:30" },
-    { subject: "Хімія", time: "9:45 - 10:45" },
-    { subject: "Англійська мова", time: "11:00 - 12:00" },
-    "Обідня перерва",
-    { subject: "Історія України", time: "1:00 - 2:00" },
-    { subject: "Мистецтво", time: "2:15 - 3:15" },
-  ],
-  Четвер: [
-    { subject: "Математика", time: "8:30 - 9:30" },
-    { subject: "Хімія", time: "9:45 - 10:45" },
-    { subject: "Англійська мова", time: "11:00 - 12:00" },
-    "Обідня перерва",
-    { subject: "Історія України", time: "1:00 - 2:00" },
-    { subject: "Мистецтво", time: "2:15 - 3:15" },
-  ],
-  "П'ятниця": [
-    { subject: "Математика", time: "8:30 - 9:30" },
-    { subject: "Хімія", time: "9:45 - 10:45" },
-    { subject: "Англійська мова", time: "11:00 - 12:00" },
-    "Обідня перерва",
-    { subject: "Історія України", time: "1:00 - 2:00" },
-    { subject: "Мистецтво", time: "2:15 - 3:15" },
-  ],
-};
+const ScheduleTable = ({ classId }) => {
+  const [schedule, setSchedule] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-const ScheduleTable = () => {
+  useEffect(() => {
+    const fetchSchedule = async () => {
+      try {
+        const res = await fetch(`/api/schedule?classId=${classId}`);
+        if (!res.ok) {
+          throw new Error("Не вдалося завантажити розклад");
+        }
+        const data = await res.json();
+        setSchedule(data.schedule);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (classId) {
+      fetchSchedule();
+    } else {
+      setLoading(false);
+      setError("Не передано classId");
+    }
+  }, [classId]);
+
+  if (loading)
+    return <p className={styles.message}>Завантаження розкладу...</p>;
+  if (error) return <p className={styles.error}>Помилка: {error}</p>;
+  if (!schedule || schedule.length === 0)
+    return <p className={styles.message}>Розклад не знайдено</p>;
+
   return (
+    <div className={styles.tiWrapper}>
     <div className={styles.scheduleContainer}>
-      {Object.entries(schedule).map(([day, lessons]) => (
-        <React.Fragment key={day}>
-          <div className={styles.dayHeading}>{day}</div>
-          {lessons.map((lesson, idx) =>
-            typeof lesson === "string" ? (
-              <div key={idx} className={styles.break}>
-                {lesson}
-              </div>
-            ) : (
-              <div key={idx} className={styles.lesson}>
-                <div className={styles.lessonName}>{lesson.subject}</div>
-                <div className={styles.lessonTime}>{lesson.time}</div>
-              </div>
-            )
-          )}
-        </React.Fragment>
+      {schedule.week.map((day, idx) => (
+        <div key={idx} className={styles.dayBlock}>
+          <div className={styles.dayHeading}>{day.day}</div>
+          {day.subjects.map((lesson, i) => (
+            <div key={i} className={styles.lesson}>
+              <div className={styles.lessonName}>{lesson.subject}</div>
+              <div className={styles.lessonTime}>{lesson.time}</div>
+            </div>
+          ))}
+        </div>
       ))}
+    </div>
     </div>
   );
 };
