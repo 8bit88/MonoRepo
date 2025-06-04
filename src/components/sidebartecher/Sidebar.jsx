@@ -1,20 +1,22 @@
 "use client";
-
+import clsx from "clsx";
 import styles from "./Sidebar.module.css";
 import React from "react";
-import clsx from "clsx";
+
 import {
   BookOpen,
   ClipboardList,
   Calendar,
+  Utensils,
   ChevronsLeft,
   ChevronsRight,
 } from "lucide-react";
 
 const navItems = [
-  { icon: <BookOpen />, text: "Оцінки", link: "/pages/teacher/marksadd" },
+  { icon: <BookOpen />, text: "Оцінки", link: "/pages/teacher/markadd" },
   { icon: <ClipboardList />, text: "Завдання", link: "/pages/teacher//tasksadd" },
   { icon: <Calendar />, text: "Розклад", link: "/pages/teacher/timetable" },
+  { icon: <Utensils />, text: "Меню", link: "/pages/teacher/menu" },
 ];
 
 export default function Sidebar({ isCollapsed, setIsCollapsed }) {

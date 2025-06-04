@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import styles from "../shedule/SheduleTable.module.css";
+import styles from "../timetech/SheduleTable.module.css";
 
 const ScheduleTable = ({ classId }) => {
   const [schedule, setSchedule] = useState(null);
@@ -39,19 +39,20 @@ const ScheduleTable = ({ classId }) => {
 
   return (
     <div className={styles.tiWrapper}>
-    <div className={styles.scheduleContainer}>
-      {schedule.map((day, idx) => (
-        <div key={idx} className={styles.dayBlock}>
-          <div className={styles.dayHeading}>{day.day}</div>
-          {day.lessons.map((lesson, i) => (
-            <div key={i} className={styles.lesson}>
-              <div className={styles.lessonName}>{lesson.subject}</div>
-              <div className={styles.lessonTime}>{lesson.time}</div>
-            </div>
-          ))}
-        </div>
-      ))}
-    </div>
+      <div className={styles.scheduleContainer}>
+        {schedule.map((day, idx) => (
+          <div key={idx} className={styles.dayBlock}>
+            <div className={styles.dayHeading}>{day.day}</div>
+            {day.lessons.map((lesson, i) => (
+              <div key={i} className={styles.lesson}>
+                <div className={styles.lessonName}>{lesson.subject}</div>
+                <div className={styles.classroom}>{lesson.class}</div>
+                <div className={styles.lessonTime}>{lesson.time}</div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

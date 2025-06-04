@@ -1,8 +1,8 @@
 "use client";
-
+import clsx from "clsx";
 import styles from "./Sidebar.module.css";
 import React from "react";
-import clsx from "clsx";
+
 import {
   BookOpen,
   ClipboardList,

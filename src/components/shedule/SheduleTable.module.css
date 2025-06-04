@@ -6,12 +6,15 @@
   flex: 1 1 300px;
   margin: 12px;
 }
+.dayBlock
+{ color: #15481F;
 
+}
 .dayHeading {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 20px;
-  color: #333;
+  color: #15481F;
 }
 
 .break {
@@ -28,14 +31,17 @@
   margin-bottom: 5px;
   border: 1px solid #ddd;
   border-radius: 8px;
+  
 }
 
 .lessonName {
   font-weight: 500;
+  color: #15481F;
 }
 
 .lessonTime {
-  color: #666;
+  
+  color: #15481F;
 }
 .tiWrapper {
   display: flex;
