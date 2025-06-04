@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import clientPromise from "@lib/mongodb"; 
+import clientPromise from "@lib/mongodb";
 
 export async function POST(req) {
   try {
@@ -12,36 +12,55 @@ export async function POST(req) {
     const user = await db.collection("Users").findOne({ email: trimmedEmail });
 
     if (!user) {
+      return NextResponse.json({ message: "User not found" }, { status: 401 });
+    }
+
+    if (user.password !== password) {
       return NextResponse.json(
-        { message: "Користувача не знайдено" },
+        { message: "Incorrect password" },
         { status: 401 }
       );
     }
 
-    if (user.password !== password) {
-      return NextResponse.json({ message: "Невірний пароль" }, { status: 401 });
-    }
-
-   
     if (!user.role) {
       return NextResponse.json(
-        { message: "У користувача не вказано роль" },
+        { message: "User has no role assigned" },
         { status: 400 }
       );
     }
 
-    return NextResponse.json({
-      message: "Вхід успішний",
+    //  cookie
+    const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+    const sessionData = JSON.stringify({
+      userId: user._id.toString(),
+      role: user.role,
+       name: user.name,
+      expiresAt,
+    });
+
+    const response = NextResponse.json({
+      message: "Login successful",
       user: {
         email: user.email,
         classId: user.classId || null,
-        role: user.role, 
+        role: user.role,
+         name: user.name,
       },
     });
+
+    response.cookies.set("session", sessionData, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      expires: expiresAt,
+      sameSite: "lax",
+      path: "/",
+    });
+
+    return response;
   } catch (err) {
     console.error("Login error:", err);
     return NextResponse.json(
-      { message: "Внутрішня помилка сервера" },
+      { message: "Internal server error" },
       { status: 500 }
     );
   }

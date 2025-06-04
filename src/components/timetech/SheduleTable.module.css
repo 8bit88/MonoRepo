@@ -1,0 +1,9 @@
+.classroom {
+  text-align: center;
+  background-color: #15481f; 
+  color: white;
+  padding: 4px 0;
+  margin: 4px 0;
+  border-radius: 6px;
+  font-weight: bold;
+}

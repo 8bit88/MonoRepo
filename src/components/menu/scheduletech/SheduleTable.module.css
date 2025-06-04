@@ -19,6 +19,14 @@
   font-style: italic;
   margin: 10px 0;
 }
+.classroom {
+ 
+  color:  #15481f;
+  padding: 4px 0;
+  justify-self: center;
+  border-radius: 6px;
+  font-weight: bold;
+}
 
 .lesson {
   display: flex;

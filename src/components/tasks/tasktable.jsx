@@ -17,8 +17,6 @@ const Task = () => {
     year: "numeric",
   });
 
-  console.log({ tasks });
-
   useEffect(() => {
     const userData = localStorage.getItem("user");
     if (userData) {
@@ -33,9 +31,7 @@ const Task = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const res = await fetch(
-          `/api/tasks?classId=${classId}&date=${selectedDateStr}`
-        );
+        const res = await fetch(`/api/tasks?classId=${classId}&date=${selectedDateStr}`);
         if (!res.ok) throw new Error("Не вдалося завантажити завдання");
         const data = await res.json();
         setTasks(data.tasks || []);
@@ -65,15 +61,14 @@ const Task = () => {
 
       <div className={styles.taskList}>
         <h2 className={styles.taskTitle}>Завдання на {formattedDate}</h2>
-
         <div className={styles.cardsContainer}>
           {tasksForDate.map((task, index) => (
             <div key={index} className={styles.card}>
-              <h3 className={styles.cardTitle}>{task.title}</h3>
-
+              <b className={styles.cardTitle}>{task.subjectName}</b>
               <p className={styles.cardDescription}>{task.description}</p>
             </div>
           ))}
+          {tasksForDate.length === 0 && <p>Завдань на цю дату немає</p>}
         </div>
       </div>
     </>
